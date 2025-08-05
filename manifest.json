@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "SearXNG — Go Deeper",
+  "description": "SearXNG",
+  "version": "2025.0.2",
+  "author": "hardwired-ghost",
+  "icons": {
+    "48": "searxng48.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "*******",
+      "strict_min_version": "109.0"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "SearXNG",
+      "keyword": "@searxng, @searx, @sx",
+      "search_url": "https://searx.stream/search?q={searchTerms}&language=auto&time_range=&safesearch=0&categories=general",
+      "favicon_url": "searxng128.png",
+      "suggest_url": "https://searx.stream/autocompleter?q={searchTerms}",
+      "is_default": true
+    }
+  }
+}
